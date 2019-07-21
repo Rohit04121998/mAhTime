@@ -2,11 +2,11 @@ import paho.mqtt.client as mqtt
 import csv
 
 # Don't forget to change the variables for the MQTT broker!
-mqtt_username = "appiko"
-mqtt_password = "appiko@123"
-mqtt_topic = "Appiko/mAhTime/BatCap"
-mqtt_broker_ip = "192.168.43.208" 
-file_name = ''
+mqtt_username = "Your_UserName"
+mqtt_password = "MQTT_Password"
+mqtt_topic = "Your_Topic"
+mqtt_broker_ip = "Broker_IP" 
+file_name = ''      # Globalizing the filename
 time_elapsed = 0
 client = mqtt.Client()
 # Set the username and password for the MQTT client
@@ -19,11 +19,13 @@ def on_connect(client, userdata, flags, rc):
     
 def on_message(client, userdata, msg):
     message = msg.payload.decode()
-    print(message)
-    global file_name,time_elapsed
-    if(message[-4:] == ".csv"):
+    global file_name,time_elapsed       # file_name and time_elapsed are the global varibles created earlier
+    if(message[-4:] == ".csv"):         # create a new file if a .csv extension is found in the message
         message = message[:-10] + 'H' + message[-9:-7] + 'M' +message[-6:-4] + 'S' +message[-4:]
+        # The message wil be of the form deviceID+load+date+time+.csv
+        # The file_name includes load+date+time+.csv
         file_name = message[9:]
+        # Create a .csv file and write the fie details in the first two lines
         with open(file_name, 'w') as csvFile:
             time_elapsed = 0
             writer = csv.writer(csvFile)
@@ -45,7 +47,7 @@ def on_message(client, userdata, msg):
             writer.writerow(b)
             time_elapsed += 4
             csvFile.close()
-   
+# A fuunction to convert time in seconds to time in hr:min:sec format    
 def time_conversion(d):
     if(d >= 60 and d < 3600):
         d1 = d // 60
