@@ -123,11 +123,11 @@ void loop() {
             dtostrf(saved,4,3,V_val);     //convert float to char array
             client.publish(mqtt_topic, V_val);    //publish value to the MQTT broker
               }
-          else if(client.publish(mqtt_topic,file) && stat == 0){
+          else if(client.publish(mqtt_topic,file) && stat == 0){  // The values read can be sent only after sending  filename
             stat = 1;
             }
           }
-         if(rear == front && discharged == 0){
+         if(rear == front && discharged == 0){  // This message is sent only after queue is empty and only once per discharge
           if(client.publish(mqtt_topic,"Fully Discharged"))
           discharged == 1;
           }
@@ -137,7 +137,7 @@ void loop() {
      }
   }
   
-  while( (millis() - _time) < 4000){    //wait for 2 seconds
+  while( (millis() - _time) < 4000){    //wait for 4 seconds
       checkForUpdate();
       if (rear != front)    //queue is not empty
         if((!(WiFi.status() < WL_CONNECTED)) && client.connect(clientID, mqtt_username, mqtt_password)) {
