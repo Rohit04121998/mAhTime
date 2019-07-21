@@ -6,10 +6,10 @@ from scipy.integrate import simps
 import time
 
 
-plt.ion()
+plt.ion()		# Start interactive mode
 style.use('ggplot')
-fig = plt.figure()
-ax1 = fig.add_subplot(111)
+fig = plt.figure()	# Create a figure "fig"
+ax1 = fig.add_subplot(111)	# Create a subplot "ax1"
 
 ax2=ax1.twinx()					#use the same x axis
 bbox_props = dict(boxstyle="square,pad=0.3", fc="green", ec="b", lw=1)		#define properties of the square box
@@ -24,9 +24,9 @@ time = time[:2] + ':' + time[3:5] + ':' + time[6:8]
 date = file_name[-24:-14]
 resistance = int(file_name[:3])	#take resistance value from the file_name
 resistance /= 1000		#resistance in kilo ohms
-hours = np.arange(0,864000,1800)  #hours in seconds for 10 days	       
-hrNo = np.arange(0,240,0.5)     #define hour numbers
-StartTime = "Date:- " + date + "\nStart Time:- " + time
+hours = np.arange(0,864000,1800)  # Half an hour in seconds for 10 days	       
+hrNo = np.arange(0,240,0.5)     #define hour numbers for every half an hour
+StartTime = "Date:- " + date + "\nStart Time:- " + time		# Define a statement for display of start time and date
         
 def animate(i):
         try:
@@ -39,7 +39,6 @@ def animate(i):
                 if(l <3):
                         return
                 plotter(Value,l)
-                #plt.xticks(hours,hrNo)
                 fig.canvas.draw()
 
         except:
@@ -55,7 +54,7 @@ def animate(i):
                 fig.canvas.draw()
 
                 
-                
+# The FunAnimation function calls the "animate" function for every 200ms(default)                
 ani = animation.FuncAnimation(fig,animate)
 
 def axes_label():
@@ -67,7 +66,8 @@ def axes_label():
         ax2.tick_params(axis='y',labelcolor='red')		#set tick parameter of secondary y axis
         plt.xticks(hours,hrNo)
         
-
+# plotter function takes in the range type "Value" and "l" calculates and returns mAh value.
+# It also clears the previous fig and redraws the figure with the updated values in the file
 def plotter(Value,l):
         x=range(0,4*l-1,4)	#time varies from 0 to 2l-1 with a step size of 2sec
         I =[(i/resistance) for i in Value]  	#divided by the load resistance gives the current value (mA)
