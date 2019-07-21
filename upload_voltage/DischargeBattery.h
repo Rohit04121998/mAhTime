@@ -7,7 +7,7 @@
 #include <Fonts/FreeSerif9pt7b.h>
 #include <Fonts/FreeSans9pt7b.h>
 
-static const char PROGMEM id[] = "ESP098990";
+static const char PROGMEM id[] = "DeviceID";  // This stores as Flash
 #define BUFF_SIZE 1000   //max size of the buffer
 #define LOAD1 16        //load resistance of 564ohm
 #define LOAD2 5        //load resistance of 232ohm
@@ -28,8 +28,8 @@ const char LOADSTR5[]="093";
 const char LOADSTR6[]="077";
 const char LOADSTR7[]="066";
 const char LOADSTR8[]="DUT";
-String filename = "analog";
-int discharged = 0;
+String filename = "";
+int discharged = 0; // Flag to check discharge condition
 const float VLowerCutOff = 2.100000;  //define the lower cut off voltage or the end of discharge voltage for the battery
 const int Vin_max = 3;           //maximum voltage that can be given as analog input
 const int Vin_min = 0;           //minimum voltage that can be given as analog input
@@ -193,7 +193,7 @@ void attachLoad(int x) {      //function to attach the load on long press
   return;
 }
 
-const char *LoadVal(int slctd) {      
+const char *LoadVal(int slctd) {     // Check the value of variable "selected" and select a load accordingly  
   const char *str;
   switch (slctd) {   
       case 1: { str = LOADSTR1; } break;
@@ -260,12 +260,13 @@ void loadSelect() {    //gets input from the user and attaches the load
     display.display();
   }
   if( typeOfPress == 2 ) {//if long press detected (no need to check the validity of 'selected', that's taken care by the switch statement)
-       const char *load = LoadVal(selected);
-       String ld(load);
+       const char *load = LoadVal(selected); // Get the selected load value
+       String ld(load);  // char[] -> String conversion
        filename = String(id);
        String date_time = dateTime();
        discharged = 0;
-       filename = filename + ld + date_time +".csv";
+       filename = filename + ld + date_time +".csv";  // Create a filename at the time of start of the discharge process
+       // Date and time is included in the filename to differentiate b/n two experiments conducted on the same day and with the same load
        attachLoad(selected);            //attach the load
        displayConnectedLd(42,30,selected);     //display the attached load
        break;                  //break from the while(1)
