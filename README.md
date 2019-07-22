@@ -18,6 +18,8 @@ The values read by the microconttrollr is sent to a RPi using a MQTT broker name
 
 Once again the batteries are charged but this time Device Under Test (DUT) is selected instead of a load (using the same microcontroller). The time taken for the DUT to discharge the batteries is found. This can then be used to calculate the life of any battery using ratios ( Eg.: If for X (mAh) it is Y (no. of days) then for Z (mAh)? = YZ/X ).
 
+## MQTT
+
 MQTT is one of the most commonly used protocols in IoT projects. It stands for Message Queuing Telemetry Transport.
 
   In addition, it is designed as a lightweight messaging protocol that uses publish/subscribe operations to exchange data between clients and the server. Furthermore, its small size, low power usage, minimized data packets and ease of implementation make the protocol ideal of the “machine-to-machine” or “Internet of Things” world.
