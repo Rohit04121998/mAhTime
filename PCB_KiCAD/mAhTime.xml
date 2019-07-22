@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\KiCAD\Measurement-Of-Capacity-Of-A-Battery\PCB_KiCAD\CapacityOfBattery.sch</source>
+    <date>06/24/19 21:32:14</date>
+    <tool>Eeschema (5.0.2)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Measurement of capacity of a battery</title>
+        <company>Appiko</company>
+        <rev>-</rev>
+        <date>2019-06-04</date>
+        <source>CapacityOfBattery.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>DUT</value>
+      <footprint>lib_fp:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CF76A7D</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>BATTERY</value>
+      <footprint>lib_fp:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5CF7996A</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRLML6401TRPBF</value>
+      <footprint>lib_fp:SOT-23</footprint>
+      <datasheet>https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</field>
+        <field name="DK_Detail_Page">/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509</field>
+        <field name="Description">MOSFET P-CH 12V 4.3A SOT-23</field>
+        <field name="Digi-Key_PN">IRLML6401PBFCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">IRLML6401TRPBF</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="IRLML6401TRPBF" description="MOSFET P-CH 12V 4.3A SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0475D2</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>IRLML6401TRPBF</value>
+      <footprint>lib_fp:SOT-23</footprint>
+      <datasheet>https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</field>
+        <field name="DK_Detail_Page">/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509</field>
+        <field name="Description">MOSFET P-CH 12V 4.3A SOT-23</field>
+        <field name="Digi-Key_PN">IRLML6401PBFCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">IRLML6401TRPBF</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="IRLML6401TRPBF" description="MOSFET P-CH 12V 4.3A SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0498F3</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>IRLML6401TRPBF</value>
+      <footprint>lib_fp:SOT-23</footprint>
+      <datasheet>https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</field>
+        <field name="DK_Detail_Page">/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509</field>
+        <field name="Description">MOSFET P-CH 12V 4.3A SOT-23</field>
+        <field name="Digi-Key_PN">IRLML6401PBFCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">IRLML6401TRPBF</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="IRLML6401TRPBF" description="MOSFET P-CH 12V 4.3A SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049929</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>IRLML6401TRPBF</value>
+      <footprint>lib_fp:SOT-23</footprint>
+      <datasheet>https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</field>
+        <field name="DK_Detail_Page">/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509</field>
+        <field name="Description">MOSFET P-CH 12V 4.3A SOT-23</field>
+        <field name="Digi-Key_PN">IRLML6401PBFCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">IRLML6401TRPBF</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="IRLML6401TRPBF" description="MOSFET P-CH 12V 4.3A SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049986</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100k</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049AF0</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049D17</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>100k</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049D3D</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>100k</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049D82</tstamp>
+    </comp>
+    <comp ref="RL1">
+      <value>232</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049E89</tstamp>
+    </comp>
+    <comp ref="RL3">
+      <value>232</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049EE8</tstamp>
+    </comp>
+    <comp ref="RL5">
+      <value>232</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D049F1F</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>NodeMCU1.0(ESP-12E)</value>
+      <footprint>lib_fp:NodeMCU-LoLinV3_without_border</footprint>
+      <libsource lib="ESP8266" part="NodeMCU1.0(ESP-12E)" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D05B443</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>30k</value>
+      <footprint>lib_fp:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0CB64B</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>SI2302</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <libsource lib="Transistor_FET_SI2302" part="SI2302" description="20V N-Channel Enhancement Mode MOSFET, RDS(ON)(Vgs@ 4.5V, Ids@3.6A) &lt;0.085ohms"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0CB6CC</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0F6D0C</tstamp>
+    </comp>
+    <comp ref="RL2">
+      <value>232</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0C89B4</tstamp>
+    </comp>
+    <comp ref="RL4">
+      <value>232</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0CC57E</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>30k</value>
+      <footprint>lib_fp:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0DAE27</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>30k</value>
+      <footprint>lib_fp:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0DCF90</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>lib_fp:MountingHole_3.2mm_M3_ISO7380</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0C9E38</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>lib_fp:MountingHole_3.2mm_M3_ISO7380</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0C9EE2</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>lib_fp:MountingHole_3.2mm_M3_ISO7380</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0CC0E0</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>lib_fp:MountingHole_3.2mm_M3_ISO7380</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0CE2E5</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x04</value>
+      <footprint>lib_fp:128x32_OLED_Display</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x04_Female" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D0F9A0A</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D11DF58</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>lib_fp:SW_PUSH_6mm</footprint>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D1217D0</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Female">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ESP8266" part="NodeMCU1.0(ESP-12E)">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NodeMCU1.0(ESP-12E)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0(ADC0)" type="input"/>
+        <pin num="2" name="RSV" type="input"/>
+        <pin num="3" name="RSV" type="input"/>
+        <pin num="4" name="SD3(GPIO10)" type="input"/>
+        <pin num="5" name="SD2(GPIO9)" type="input"/>
+        <pin num="6" name="SD1(MOSI)" type="input"/>
+        <pin num="7" name="CMD(CS)" type="input"/>
+        <pin num="8" name="SDO(MISO)" type="input"/>
+        <pin num="9" name="CLK(SCLK)" type="input"/>
+        <pin num="10" name="GND" type="input"/>
+        <pin num="11" name="3.3V" type="input"/>
+        <pin num="12" name="EN" type="input"/>
+        <pin num="13" name="RST" type="input"/>
+        <pin num="14" name="GND" type="input"/>
+        <pin num="15" name="VIN" type="input"/>
+        <pin num="16" name="3.3V" type="input"/>
+        <pin num="17" name="GND" type="input"/>
+        <pin num="18" name="TX(GPIO1)" type="input"/>
+        <pin num="19" name="RX(DPIO3)" type="input"/>
+        <pin num="20" name="D8(GPIO15)" type="input"/>
+        <pin num="21" name="D7(GPIO13)" type="input"/>
+        <pin num="22" name="D6(GPIO12)" type="input"/>
+        <pin num="23" name="D5(GPIO14)" type="input"/>
+        <pin num="24" name="GND" type="input"/>
+        <pin num="25" name="3.3V" type="input"/>
+        <pin num="26" name="D4(GPIO2)" type="input"/>
+        <pin num="27" name="D3(GPIO0)" type="input"/>
+        <pin num="28" name="D2(GPIO4)" type="input"/>
+        <pin num="29" name="D1(GPIO5)" type="input"/>
+        <pin num="30" name="D0(GPIO16)" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET_SI2302" part="SI2302">
+      <description>20V N-Channel Enhancement Mode MOSFET, RDS(ON)(Vgs@ 4.5V, Ids@3.6A) &lt;0.085ohms</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SI2302</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="power_out"/>
+        <pin num="3" name="D" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Transistors-FETs-MOSFETs-Single" part="IRLML6401TRPBF">
+      <description>MOSFET P-CH 12V 4.3A SOT-23</description>
+      <docs>https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRLML6401TRPBF</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</field>
+        <field name="Digi-Key_PN">IRLML6401PBFCT-ND</field>
+        <field name="MPN">IRLML6401TRPBF</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="DK_Datasheet_Link">https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634</field>
+        <field name="DK_Detail_Page">/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509</field>
+        <field name="Description">MOSFET P-CH 12V 4.3A SOT-23</field>
+        <field name="Manufacturer">Infineon Technologies</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="BiDi"/>
+        <pin num="2" name="S" type="BiDi"/>
+        <pin num="3" name="D" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="ESP8266">
+      <uri>C:/KiCAD/lib/kicad-ESP8266-master/ESP8266.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
+    </library>
+    <library logical="Transistor_FET_SI2302">
+      <uri>C:/KiCAD/lib/Transistor_FET_SI2302.lib</uri>
+    </library>
+    <library logical="dk_Transistors-FETs-MOSFETs-Single">
+      <uri>C:/KiCAD/lib/digikey-kicad-library-master/digikey-symbols/dk_Transistors-FETs-MOSFETs-Single.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Vcc">
+      <node ref="R3" pin="1"/>
+      <node ref="U1" pin="11"/>
+      <node ref="R5" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="25"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="2" name="/Vbat">
+      <node ref="J1" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="3" name="/dut">
+      <node ref="Q4" pin="3"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="4" name="/Vin">
+      <node ref="U1" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="5" name="Net-(Q5-Pad3)">
+      <node ref="Q5" pin="3"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="6" name="/En_VD">
+      <node ref="U1" pin="22"/>
+      <node ref="R6" pin="2"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="7" name="/SW">
+      <node ref="SW1" pin="1"/>
+      <node ref="U1" pin="27"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="8" name="Net-(Q1-Pad3)">
+      <node ref="RL1" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="9" name="Net-(Q2-Pad3)">
+      <node ref="RL3" pin="1"/>
+      <node ref="Q2" pin="3"/>
+    </net>
+    <net code="10" name="/SCL">
+      <node ref="J3" pin="3"/>
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="11" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="12" name="/SDA">
+      <node ref="J3" pin="4"/>
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="14" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="15" name="Net-(RL1-Pad2)">
+      <node ref="RL2" pin="1"/>
+      <node ref="RL1" pin="2"/>
+    </net>
+    <net code="16" name="GND">
+      <node ref="R6" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="U1" pin="24"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="2"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J3" pin="1"/>
+      <node ref="RL2" pin="2"/>
+      <node ref="RL4" pin="2"/>
+      <node ref="RL3" pin="2"/>
+      <node ref="RL5" pin="2"/>
+    </net>
+    <net code="17" name="Net-(Q3-Pad3)">
+      <node ref="Q3" pin="3"/>
+      <node ref="RL4" pin="1"/>
+      <node ref="RL5" pin="1"/>
+    </net>
+    <net code="18" name="/Ctrl3">
+      <node ref="R4" pin="2"/>
+      <node ref="U1" pin="28"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="19" name="/Ctrl1">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="30"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="20" name="/Ctrl2">
+      <node ref="U1" pin="29"/>
+      <node ref="R3" pin="2"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="21" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="22" name="/Ctrl4">
+      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="21"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="23" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="24" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="25" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="26" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="27" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad15)">
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="30" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="31" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+  </nets>
+</export>

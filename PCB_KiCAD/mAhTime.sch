@@ -1,0 +1,714 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Measurement of capacity of a battery"
+Date "2019-06-04"
+Rev "-"
+Comp "Appiko"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5CF76A7D
+P 9500 1350
+F 0 "J2" H 9350 1250 50  0000 L CNN
+F 1 "DUT" H 9300 1350 50  0000 L CNN
+F 2 "lib_fp:PinHeader_1x02_P2.54mm_Vertical" H 9500 1350 50  0001 C CNN
+F 3 "~" H 9500 1350 50  0001 C CNN
+	1    9500 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5CF7996A
+P 8300 1350
+F 0 "J1" H 8250 1250 50  0000 R CNN
+F 1 "BATTERY" H 8250 1350 50  0000 R CNN
+F 2 "lib_fp:PinHeader_1x02_P2.54mm_Vertical" H 8300 1350 50  0001 C CNN
+F 3 "~" H 8300 1350 50  0001 C CNN
+	1    8300 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5CF7A0BA
+P 7950 1400
+F 0 "#PWR04" H 7950 1150 50  0001 C CNN
+F 1 "GND" H 7955 1227 50  0000 C CNN
+F 2 "" H 7950 1400 50  0001 C CNN
+F 3 "" H 7950 1400 50  0001 C CNN
+	1    7950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1400 7950 1350
+Wire Wire Line
+	7950 1350 8100 1350
+Wire Wire Line
+	8100 1250 7850 1250
+Text Label 7850 1250 0    50   ~ 0
+Vbat
+Text Notes 2400 1200 0    50   ~ 0
+Discharge Circuitry: Battery discharges through the resistor(s) selected by the MCU by giving active high signal on CtrlX.
+Text Notes 9300 1700 0    50   ~ 0
+J2 is used to\nconnect the\nDevice Under Test.
+Text Notes 8100 1650 0    50   ~ 0
+J1 is used to\nconnect the \nBattery [charged].
+$Comp
+L mAhTime:dk_Transistors-FETs-MOSFETs-Single_IRLML6401TRPBF Q1
+U 1 1 5D0475D2
+P 2900 2300
+F 0 "Q1" V 3050 2300 60  0000 L CNN
+F 1 "IRLML6401TRPBF" V 3150 1950 60  0000 L CNN
+F 2 "lib_fp:SOT-23" H 3100 2500 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 3100 2600 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 3100 2700 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 3100 2800 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 3100 2900 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 3100 3000 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 3100 3100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 3100 3200 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 3100 3300 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 3100 3400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3100 3500 60  0001 L CNN "Status"
+	1    2900 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L mAhTime:dk_Transistors-FETs-MOSFETs-Single_IRLML6401TRPBF Q2
+U 1 1 5D0498F3
+P 4250 2350
+F 0 "Q2" V 4400 2350 60  0000 L CNN
+F 1 "IRLML6401TRPBF" V 4500 2050 60  0000 L CNN
+F 2 "lib_fp:SOT-23" H 4450 2550 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 4450 2650 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 4450 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 4450 2850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4450 2950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4450 3050 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 4450 3150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 4450 3250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 4450 3350 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4450 3450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4450 3550 60  0001 L CNN "Status"
+	1    4250 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L mAhTime:dk_Transistors-FETs-MOSFETs-Single_IRLML6401TRPBF Q3
+U 1 1 5D049929
+P 5600 2350
+F 0 "Q3" V 5750 2350 60  0000 L CNN
+F 1 "IRLML6401TRPBF" V 5850 2050 60  0000 L CNN
+F 2 "lib_fp:SOT-23" H 5800 2550 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5800 2650 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 5800 2750 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 5800 2850 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 5800 2950 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 5800 3050 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 5800 3150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 5800 3250 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 5800 3350 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 5800 3450 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5800 3550 60  0001 L CNN "Status"
+	1    5600 2350
+	1    0    0    1   
+$EndComp
+$Comp
+L mAhTime:dk_Transistors-FETs-MOSFETs-Single_IRLML6401TRPBF Q4
+U 1 1 5D049986
+P 6900 2400
+F 0 "Q4" V 7050 2400 60  0000 L CNN
+F 1 "IRLML6401TRPBF" V 7150 2100 60  0000 L CNN
+F 2 "lib_fp:SOT-23" H 7100 2600 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 7100 2700 60  0001 L CNN
+F 4 "IRLML6401PBFCT-ND" H 7100 2800 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRLML6401TRPBF" H 7100 2900 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 7100 3000 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 7100 3100 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irlml6401pbf.pdf?fileId=5546d462533600a401535668b96d2634" H 7100 3200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRLML6401TRPBF/IRLML6401PBFCT-ND/812509" H 7100 3300 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 12V 4.3A SOT-23" H 7100 3400 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 7100 3500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7100 3600 60  0001 L CNN "Status"
+	1    6900 2400
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D049AF0
+P 2500 1800
+F 0 "R1" V 2600 1750 50  0000 L CNN
+F 1 "100k" V 2500 1700 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2430 1800 50  0001 C CNN
+F 3 "~" H 2500 1800 50  0001 C CNN
+	1    2500 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D049D17
+P 3850 1850
+F 0 "R3" V 3950 1800 50  0000 L CNN
+F 1 "100k" V 3850 1750 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3780 1850 50  0001 C CNN
+F 3 "~" H 3850 1850 50  0001 C CNN
+	1    3850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D049D3D
+P 5200 1850
+F 0 "R4" V 5300 1800 50  0000 L CNN
+F 1 "100k" V 5200 1750 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 1850 50  0001 C CNN
+F 3 "~" H 5200 1850 50  0001 C CNN
+	1    5200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D049D82
+P 6500 1900
+F 0 "R5" V 6600 1850 50  0000 L CNN
+F 1 "100k" V 6500 1800 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 1900 50  0001 C CNN
+F 3 "~" H 6500 1900 50  0001 C CNN
+	1    6500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RL1
+U 1 1 5D049E89
+P 2900 2750
+F 0 "RL1" V 3000 2700 50  0000 L CNN
+F 1 "232" V 2900 2650 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 2750 50  0001 C CNN
+F 3 "~" H 2900 2750 50  0001 C CNN
+	1    2900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RL3
+U 1 1 5D049EE8
+P 4250 2800
+F 0 "RL3" V 4350 2750 50  0000 L CNN
+F 1 "232" V 4250 2700 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4180 2800 50  0001 C CNN
+F 3 "~" H 4250 2800 50  0001 C CNN
+	1    4250 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R RL5
+U 1 1 5D049F1F
+P 5600 2800
+F 0 "RL5" V 5700 2750 50  0000 L CNN
+F 1 "232" V 5600 2700 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5530 2800 50  0001 C CNN
+F 3 "~" H 5600 2800 50  0001 C CNN
+	1    5600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3250 2900 3350
+Wire Wire Line
+	4250 2950 4250 3050
+Wire Wire Line
+	5600 2950 5600 3000
+Wire Wire Line
+	2500 1950 2500 2200
+Wire Wire Line
+	2500 2200 2600 2200
+Wire Wire Line
+	3950 2250 3850 2250
+Wire Wire Line
+	3850 2250 3850 2000
+Wire Wire Line
+	5300 2250 5200 2250
+Wire Wire Line
+	5200 2250 5200 2000
+Wire Wire Line
+	6600 2300 6500 2300
+Wire Wire Line
+	6500 2300 6500 2050
+$Comp
+L power:GND #PWR07
+U 1 1 5D04B406
+P 9100 1400
+F 0 "#PWR07" H 9100 1150 50  0001 C CNN
+F 1 "GND" H 9105 1227 50  0000 C CNN
+F 2 "" H 9100 1400 50  0001 C CNN
+F 3 "" H 9100 1400 50  0001 C CNN
+	1    9100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2200 2500 2200
+Connection ~ 2500 2200
+Connection ~ 3850 2250
+Connection ~ 5200 2250
+Connection ~ 6500 2300
+Wire Wire Line
+	9100 1350 9100 1400
+Text Label 2300 2200 0    50   ~ 0
+Ctrl1
+Text Label 3650 2250 0    50   ~ 0
+Ctrl2
+Wire Wire Line
+	3650 2250 3850 2250
+Wire Wire Line
+	5000 2250 5200 2250
+Text Label 5000 2250 0    50   ~ 0
+Ctrl3
+Wire Wire Line
+	6300 2300 6500 2300
+Text Label 6300 2300 0    50   ~ 0
+Ctrl4
+$Comp
+L mAhTime:ESP8266_NodeMCU1.0(ESP-12E) U1
+U 1 1 5D05B443
+P 5700 5100
+F 0 "U1" H 5700 6187 60  0000 C CNN
+F 1 "NodeMCU1.0(ESP-12E)" H 5700 6081 60  0000 C CNN
+F 2 "lib_fp:NodeMCU-LoLinV3_without_border" H 5700 6081 60  0001 C CNN
+F 3 "" H 5100 4250 60  0000 C CNN
+	1    5700 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4400 6500 4400
+Wire Wire Line
+	6750 4500 6500 4500
+Wire Wire Line
+	6750 4600 6500 4600
+Wire Wire Line
+	6750 5300 6500 5300
+Wire Wire Line
+	4650 5400 4900 5400
+Wire Wire Line
+	4650 4400 4900 4400
+Text Label 4650 4400 0    50   ~ 0
+Vin
+Text Label 4650 5400 0    50   ~ 0
+Vcc
+Text Label 6750 5300 2    50   ~ 0
+Ctrl4
+Text Label 6750 4600 2    50   ~ 0
+Ctrl3
+Text Label 6750 4500 2    50   ~ 0
+Ctrl2
+Text Label 6750 4400 2    50   ~ 0
+Ctrl1
+NoConn ~ 4900 5200
+NoConn ~ 4900 5100
+NoConn ~ 4900 5000
+NoConn ~ 4900 4900
+NoConn ~ 4900 4600
+NoConn ~ 4900 5800
+NoConn ~ 4900 5500
+NoConn ~ 4900 5600
+Text Label 6750 5200 2    50   ~ 0
+En_VD
+$Comp
+L Device:R R9
+U 1 1 5D0CB64B
+P 8750 5100
+F 0 "R9" V 8850 5050 50  0000 L CNN
+F 1 "30k" V 8750 5000 50  0000 L CNN
+F 2 "lib_fp:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8680 5100 50  0001 C CNN
+F 3 "~" H 8750 5100 50  0001 C CNN
+	1    8750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET_SI2302:SI2302 Q5
+U 1 1 5D0CB6CC
+P 8750 5600
+F 0 "Q5" H 8849 5646 50  0000 L CNN
+F 1 "SI2302" H 8849 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 5900 50  0001 C CNN
+F 3 "" H 8550 5900 50  0001 C CNN
+	1    8750 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5D0CB735
+P 8750 5900
+F 0 "#PWR05" H 8750 5650 50  0001 C CNN
+F 1 "GND" H 8755 5727 50  0000 C CNN
+F 2 "" H 8750 5900 50  0001 C CNN
+F 3 "" H 8750 5900 50  0001 C CNN
+	1    8750 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4800 8750 4900
+Wire Wire Line
+	8750 5250 8750 5400
+Wire Wire Line
+	8750 5800 8750 5850
+Wire Wire Line
+	8500 4050 8750 4050
+Wire Wire Line
+	8750 4050 8750 4150
+Text Label 8500 4050 0    50   ~ 0
+Vbat
+Text Label 7900 5600 0    50   ~ 0
+En_VD
+Wire Wire Line
+	8750 4900 8500 4900
+Connection ~ 8750 4900
+Wire Wire Line
+	8750 4900 8750 4950
+Text Label 8500 4900 0    50   ~ 0
+Vin
+Text Notes 4900 3950 0    50   ~ 0
+The resistors forming the voltage divider \nare removed and external voltage divider \nis used with a low side N-MOS switch
+Text Notes 8100 3900 0    50   ~ 0
+External voltage divider \nwith precision resistors (0.1%)
+$Comp
+L Device:R R6
+U 1 1 5D0F6D0C
+P 8300 5850
+F 0 "R6" V 8400 5850 50  0000 C CNN
+F 1 "10k" V 8300 5850 50  0000 C CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8230 5850 50  0001 C CNN
+F 3 "~" H 8300 5850 50  0001 C CNN
+	1    8300 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 5850 8750 5850
+Connection ~ 8750 5850
+Wire Wire Line
+	8750 5850 8750 5900
+Wire Wire Line
+	8150 5850 8150 5600
+Wire Wire Line
+	8150 5600 8450 5600
+Wire Wire Line
+	2900 2500 2900 2600
+Wire Wire Line
+	4250 2550 4250 2650
+Wire Wire Line
+	5600 2550 5600 2600
+Wire Wire Line
+	2500 1450 2500 1650
+Text Label 2500 1450 3    50   ~ 0
+Vcc
+$Comp
+L power:GND #PWR03
+U 1 1 5D0F8C5F
+P 5600 3050
+F 0 "#PWR03" H 5600 2800 50  0001 C CNN
+F 1 "GND" H 5605 2877 50  0000 C CNN
+F 2 "" H 5600 3050 50  0001 C CNN
+F 3 "" H 5600 3050 50  0001 C CNN
+	1    5600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D0FA0DF
+P 4250 3050
+F 0 "#PWR02" H 4250 2800 50  0001 C CNN
+F 1 "GND" H 4255 2877 50  0000 C CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5D0FB55F
+P 2900 3350
+F 0 "#PWR01" H 2900 3100 50  0001 C CNN
+F 1 "GND" H 2905 3177 50  0000 C CNN
+F 2 "" H 2900 3350 50  0001 C CNN
+F 3 "" H 2900 3350 50  0001 C CNN
+	1    2900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1500 3850 1700
+Wire Wire Line
+	5200 1450 5200 1700
+Text Label 3850 1500 3    50   ~ 0
+Vcc
+Text Label 5200 1450 3    50   ~ 0
+Vcc
+Wire Wire Line
+	6500 1450 6500 1750
+Text Label 6500 1450 3    50   ~ 0
+Vcc
+Wire Wire Line
+	2900 1850 2900 2100
+Wire Wire Line
+	4250 1900 4250 2150
+Wire Wire Line
+	5600 1850 5600 2150
+Wire Wire Line
+	6900 1850 6900 2200
+Text Label 2900 1850 3    50   ~ 0
+Vbat
+Text Label 4250 1900 3    50   ~ 0
+Vbat
+Text Label 5600 1850 3    50   ~ 0
+Vbat
+Text Label 6900 1850 3    50   ~ 0
+Vbat
+Wire Wire Line
+	9100 1350 9300 1350
+Wire Wire Line
+	9300 1250 9100 1250
+Wire Wire Line
+	6900 2600 6900 2900
+Text Label 6900 2900 1    50   ~ 0
+dut
+Text Label 9100 1250 0    50   ~ 0
+dut
+Wire Wire Line
+	4650 4500 4900 4500
+Text Label 4650 4500 0    50   ~ 0
+GND
+Wire Wire Line
+	6500 4900 6750 4900
+Text Label 6750 4900 2    50   ~ 0
+Vcc
+Wire Wire Line
+	6500 5000 6750 5000
+Text Label 6750 5000 2    50   ~ 0
+GND
+Wire Wire Line
+	6500 5800 6750 5800
+Text Label 6750 5800 2    50   ~ 0
+Vcc
+Wire Wire Line
+	6500 5700 6750 5700
+Text Label 6750 5700 2    50   ~ 0
+GND
+Wire Wire Line
+	6750 4700 6500 4700
+Wire Wire Line
+	4650 5700 4900 5700
+Wire Wire Line
+	4650 5300 4900 5300
+Text Label 4650 5300 0    50   ~ 0
+GND
+Text Label 4650 5700 0    50   ~ 0
+GND
+Text Label 6750 4700 2    50   ~ 0
+SW
+Wire Wire Line
+	6500 5200 6750 5200
+Connection ~ 8150 5600
+Wire Wire Line
+	7900 5600 8150 5600
+NoConn ~ 4900 4800
+Wire Wire Line
+	8800 2000 8800 2250
+Wire Wire Line
+	8800 2550 8800 2600
+$Comp
+L power:GND #PWR06
+U 1 1 5D1B375E
+P 8800 3200
+F 0 "#PWR06" H 8800 2950 50  0001 C CNN
+F 1 "GND" H 8805 3027 50  0000 C CNN
+F 2 "" H 8800 3200 50  0001 C CNN
+F 3 "" H 8800 3200 50  0001 C CNN
+	1    8800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3100 8800 3200
+Wire Wire Line
+	8450 2600 8800 2600
+Connection ~ 8800 2600
+Wire Wire Line
+	8800 2600 8800 2700
+Text Label 8800 2000 3    50   ~ 0
+Vcc
+Text Label 8450 2600 0    50   ~ 0
+SW
+Text Notes 9000 2700 0    50   ~ 0
+A switch is used \nto select the load.
+$Comp
+L Device:R RL2
+U 1 1 5D0C89B4
+P 2900 3100
+F 0 "RL2" V 3000 3050 50  0000 L CNN
+F 1 "232" V 2900 3000 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 3100 50  0001 C CNN
+F 3 "~" H 2900 3100 50  0001 C CNN
+	1    2900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2950 2900 2900
+$Comp
+L Device:R RL4
+U 1 1 5D0CC57E
+P 5350 2800
+F 0 "RL4" V 5450 2750 50  0000 L CNN
+F 1 "232" V 5350 2700 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5280 2800 50  0001 C CNN
+F 3 "~" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2650 5350 2600
+Wire Wire Line
+	5350 2600 5600 2600
+Connection ~ 5600 2600
+Wire Wire Line
+	5600 2600 5600 2650
+Wire Wire Line
+	5350 2950 5350 3000
+Wire Wire Line
+	5350 3000 5600 3000
+Connection ~ 5600 3000
+Wire Wire Line
+	5600 3000 5600 3050
+$Comp
+L Device:R R7
+U 1 1 5D0DAE27
+P 8750 4300
+F 0 "R7" V 8850 4250 50  0000 L CNN
+F 1 "30k" V 8750 4200 50  0000 L CNN
+F 2 "lib_fp:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8680 4300 50  0001 C CNN
+F 3 "~" H 8750 4300 50  0001 C CNN
+	1    8750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5D0DCF90
+P 8750 4650
+F 0 "R8" V 8850 4600 50  0000 L CNN
+F 1 "30k" V 8750 4550 50  0000 L CNN
+F 2 "lib_fp:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8680 4650 50  0001 C CNN
+F 3 "~" H 8750 4650 50  0001 C CNN
+	1    8750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 4500 8750 4450
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5D0C9E38
+P 2800 4000
+F 0 "H1" H 2900 4046 50  0000 L CNN
+F 1 "MountingHole" H 2900 3955 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_ISO7380" H 2800 4000 50  0001 C CNN
+F 3 "~" H 2800 4000 50  0001 C CNN
+	1    2800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5D0C9EE2
+P 2800 4250
+F 0 "H2" H 2900 4296 50  0000 L CNN
+F 1 "MountingHole" H 2900 4205 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_ISO7380" H 2800 4250 50  0001 C CNN
+F 3 "~" H 2800 4250 50  0001 C CNN
+	1    2800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5D0CC0E0
+P 2800 4500
+F 0 "H3" H 2900 4546 50  0000 L CNN
+F 1 "MountingHole" H 2900 4455 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_ISO7380" H 2800 4500 50  0001 C CNN
+F 3 "~" H 2800 4500 50  0001 C CNN
+	1    2800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5D0CE2E5
+P 2800 4750
+F 0 "H4" H 2900 4796 50  0000 L CNN
+F 1 "MountingHole" H 2900 4705 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_ISO7380" H 2800 4750 50  0001 C CNN
+F 3 "~" H 2800 4750 50  0001 C CNN
+	1    2800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 5D0F9A0A
+P 2950 5550
+F 0 "J3" H 2844 5835 50  0000 C CNN
+F 1 "Conn_01x04" H 2844 5744 50  0000 C CNN
+F 2 "lib_fp:128x32_OLED_Display" H 2950 5550 50  0001 C CNN
+F 3 "~" H 2950 5550 50  0001 C CNN
+	1    2950 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5450 3450 5450
+Wire Wire Line
+	3450 5550 3150 5550
+Wire Wire Line
+	3450 5650 3150 5650
+Wire Wire Line
+	3450 5750 3150 5750
+Text Label 3450 5450 2    50   ~ 0
+GND
+Text Label 3450 5550 2    50   ~ 0
+Vcc
+Text Label 3450 5650 2    50   ~ 0
+SCL
+Text Label 3450 5750 2    50   ~ 0
+SDA
+NoConn ~ 4900 4700
+Text Notes 3550 6100 2    50   ~ 0
+J3 is used to interface \nOLED display using I2C \ncommunication.
+$Comp
+L Device:R R2
+U 1 1 5D11DF58
+P 8800 2400
+F 0 "R2" V 8900 2350 50  0000 L CNN
+F 1 "1k" V 8800 2350 50  0000 L CNN
+F 2 "lib_fp:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 2400 50  0001 C CNN
+F 3 "~" H 8800 2400 50  0001 C CNN
+	1    8800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D1217D0
+P 8800 2900
+F 0 "SW1" V 8754 3048 50  0000 L CNN
+F 1 "SW_Push" V 8845 3048 50  0000 L CNN
+F 2 "lib_fp:SW_PUSH_6mm" H 8800 3100 50  0001 C CNN
+F 3 "" H 8800 3100 50  0001 C CNN
+	1    8800 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 4800 6500 4800
+Text Label 6750 4800 2    50   ~ 0
+SDA
+Wire Wire Line
+	6500 5100 6750 5100
+Text Label 6750 5100 2    50   ~ 0
+SCL
+NoConn ~ 6500 5400
+NoConn ~ 6500 5500
+NoConn ~ 6500 5600
+$EndSCHEMATC
