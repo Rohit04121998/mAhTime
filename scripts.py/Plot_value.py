@@ -69,7 +69,7 @@ def axes_label():
 # plotter function takes in the range type "Value" and "l" calculates and returns mAh value.
 # It also clears the previous fig and redraws the figure with the updated values in the file
 def plotter(Value,l):
-        x=range(0,4*l-1,4)	#time varies from 0 to 2l-1 with a step size of 2sec
+        x=range(0,4*l-1,4)	#time varies from 0 to 4l-1 with a step size of 4sec
         I =[(i/resistance) for i in Value]  	#divided by the load resistance gives the current value (mA)
         mAh=trapz(I,dx=4) 	#area under the curve
         mAh /= 3600      #to convert time unit from seconds to hour
