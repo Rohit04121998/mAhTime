@@ -64,7 +64,7 @@ def axes_label():
         ax1.tick_params(axis='x',labelcolor='black')	#set tick parametr of x axis
         ax2.set_ylabel('Current (mA)')
         ax2.tick_params(axis='y',labelcolor='red')		#set tick parameter of secondary y axis
-        plt.xticks(hours,hrNo)
+
         
 # plotter function takes in the range type "Value" and "l" calculates and returns mAh value.
 # It also clears the previous fig and redraws the figure with the updated values in the file
@@ -78,6 +78,7 @@ def plotter(Value,l):
         Vplot, =ax1.plot(x, Value,'b-',label='Voltage (V)')	#plot x v/s Value i.e. voltage
 
         ax2.clear()
+	plt.xticks(hours,hrNo)		#Set xticks parameter
         Cplot, =ax2.plot(x,I,'r--',label='Current (mA)')		#plot x v/s current
         
         
