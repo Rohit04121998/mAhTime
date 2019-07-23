@@ -50,9 +50,9 @@ When a device (a client) wants to receive data from the broker, we call this ope
 * The *Message*, which is the data that a device receives “when subscribing” from a topic or send “when publishing” to a topic.
 * *Publish*, is the process a device does to send its message to the broker.
 * *Subscribe*, where a device does to retrieve a message from the broker.
-  
-  
-  By now hopefully you would have an idea how a MQTT network might look or works like. 
+
+
+*By now hopefully you would have an idea how a MQTT network might look or works like.* 
   
   
   The common methods used to transfer data are:
