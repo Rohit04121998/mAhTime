@@ -83,7 +83,7 @@ PCB Front             |  PCB Back
 
 ### <p align="center">Fig 2. Soldered PCB</p>
 
-<p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/ESP_Display.JPG" height="200" width="350"></p>
+<p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/ESP_Display.JPG"></p>
 
 ### <p align="center">Fig 3. ESP Display</p>
 
