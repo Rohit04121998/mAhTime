@@ -32,17 +32,17 @@ def animate(i):
         try:
                 Value = np.loadtxt(file_name,
                                 unpack= True,
-                                skiprows = 3,
+                                skiprows = 2,
                                 delimiter = ',',usecols = 1)
         
                 l = len(Value) #get the number of columns
-                if(l <3):
+                if(l <2):
                         return
                 plotter(Value,l)
                 fig.canvas.draw()
 
         except:
-                Value = np.loadtxt(open(file_name,'rt').readlines()[:-3],skiprows=3,delimiter = ',',unpack = True,usecols = 1)
+                Value = np.loadtxt(open(file_name,'rt').readlines()[:-2],skiprows=2,delimiter = ',',unpack = True,usecols = 1)
                 TimeTaken = open(file_name,'r').readlines()[-2][:7]       # To fid Toatal time taken
                 l = len(Value)
                 mAh = plotter(Value,l)
