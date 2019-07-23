@@ -77,9 +77,11 @@ Arduino IDE is used to program the microcontroller. The required header files an
 
 ### <p align="center">Fig 1. Unsoldered PCB</p>
 
+<p align="center">
 PCB Front             |  PCB Back
 :-------------------------:|:-------------------------:
 <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg" height="175" width="350"> |  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" height="175" width="350"> 
+</p>
 
 ### <p align="center">Fig 2. Soldered PCB</p>
 
