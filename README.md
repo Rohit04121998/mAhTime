@@ -73,17 +73,17 @@ The hardware limits the maximum battery voltage to 3.6V as the battery voltage a
 The circuit connections and the designed PCB can be found in the directory PCB_KICAD. The details about the charger and the battery can be found in the 'Charger_hacked' directory. 
 Arduino IDE is used to program the microcontroller. The required header files and libraries are in the 'upload_voltage' directory.
 
-<p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_unsoldered.jpg" height="450"></p>
+<p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_unsoldered.jpg" height="400"></p>
 
 ### <p align="center">Fig 1. Unsoldered PCB</p>
 
 PCB Front             |  PCB Back
 :-------------------------:|:-------------------------:
-<p><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg" height="175" width="350"></p>  |  <p><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" height="175" width="350"></p> 
+<img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg" height="175" width="350"> |  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" height="175" width="350"> 
 
 ### <p align="center">Fig 2. Soldered PCB</p>
 
-<p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/ESP_Display.JPG" height="450"></p>
+<p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/ESP_Display.JPG" height="200" width="350"></p>
 
 ### <p align="center">Fig 3. ESP Display</p>
 
