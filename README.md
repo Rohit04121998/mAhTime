@@ -77,6 +77,14 @@ Arduino IDE is used to program the microcontroller. The required header files an
 
 ### <p align="center">Fig 1. Unsoldered PCB</p>
 
+.pull-left[
+<img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg" width=300 height=400>
+]
+
+.pull-right[
+<img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" width=300 height=242>
+]
+
 <p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/ESP_Display.JPG" height="450"></p>
 
 ### <p align="center">Fig 2. ESP Display</p>
