@@ -86,8 +86,8 @@ Solarized dark             |  Solarized Ocean
 ### <p align="center">Fig 2. ESP Display</p>
 
 <p float="left">
-  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg">
-  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" /> 
+  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg" height="200" width="450">
+  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" height="200" width="450"> 
 </p>
 
 
