@@ -26,7 +26,7 @@ def on_message(client, userdata, msg):
         # The file_name includes load+date+time+.csv
         file_name = message[9:]
         # Create a .csv file and write the fie details in the first two lines
-        with open(file_name, 'w') as csvFile:
+        with open(file_name, 'w',newline='') as csvFile:
             time_elapsed = 0
             writer = csv.writer(csvFile)
             list_1 = []
@@ -36,7 +36,7 @@ def on_message(client, userdata, msg):
             writer.writerow(list_2)
             csvFile.close()
     else:
-        with open(file_name, 'a') as csvFile:
+        with open(file_name, 'a',newline='') as csvFile:
             writer = csv.writer(csvFile)
             if(message == "Fully Discharged"):
                 v = message
