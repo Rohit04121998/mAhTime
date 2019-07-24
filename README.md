@@ -89,6 +89,10 @@ PCB Front             |  PCB Back
 
 ## Code:
 
+* In the *upload_voltage.ino* file, *Vbat* variable is used to store the voltage value. The queue is sized to hold a maximum of 1000 values. Here, the value is stored and sent every 4 seconds.
+
+* To get the date and time info from the ESP8266, *NTTP Client* has been used . The *getFormattedDate()* function gives the date and time format as 2018-05-28T16:00:13Z. So modifications were done and the final output was  2018-05-28_10:00:13. This was further modified in the *plot.py* by replacing ':' with 'H', 'M' and 'S'. This was then appended to the *.csv* file having the load value as its initial name.
+
 ## Result:
 **Load**             |  093 Ohms             |  161 Ohms             
 :-------------------------:|:-------------------------:|:-------------------------:
