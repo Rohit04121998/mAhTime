@@ -89,16 +89,27 @@ PCB Front             |  PCB Back
 
 ## Code:
 
-* In the *upload_voltage.ino* file, *Vbat* variable is used to store the voltage value. The queue is sized to hold a maximum of 1000 values. Here, the value is stored and sent every 4 seconds.
+* In the *upload_voltage.ino* file, **Vbat** variable is used to store the voltage value. The queue is sized to hold a maximum of 1000 values. Here, the value is stored and sent every 4 seconds.
 
-* To get the date and time info from the ESP8266, *NTTP Client* has been used . The *getFormattedDate()* function gives the date and time format as 2018-05-28T16:00:13Z. So modifications were done and the final output was  2018-05-28_10:00:13. This was further modified in the *plot.py* by replacing ':' with 'H', 'M' and 'S'. This was then appended to the *.csv* file having the load value as its initial name.
+* To get the date and time info from the ESP8266, *NTTP Client* has been used . The *getFormattedDate()* function gives the date and time format as 2018-05-28T10:00:13Z. So modifications were done and the final output was  2018-05-28_10:00:13. This was further modified in the *plot.py* by replacing ':' with 'H', 'M' and 'S'. This was then appended to the *.csv* file having the load value as its initial name.
+* The code is made such that a short press of the button is conssidered as next option and a long press is considered as select. The long press for one of the load values sets the value of variable *seleted* to a umber between 1 and 8. The load is selected according to the value of variable *selected* in the function *LoadVal*. The function *attachLoad* attaches the load and changes the state of the mosfets accordingly. The discharging of the battery starts as soon as the load is attached.
+* Before any value is sent through MQTT, the variable *filename* which contains the device ID, load, date and time with the .csv extension is published to inform the subscriber that a new discharge cycle has started and to create a new CSV file by the name of the variable sent. Only after the filename are the voltage values to be sent.
+* Once all the values are sent over through MQTT, a "Fully Discharged" message is sent stating that te experiment's finished.
+
+* The code for MQTT subscribe is a simple code which tells the interpreter what to do when the connection with the MQTT broker is established and when a message is recieved. The funtion on_connect will be executed as soon as connection is established. The on_message funtion is executed as soon as a message is received. The messaged is checked for a **.csv** extension and a new CSV file is created if the result of this comparision is positive.
+* This message with a .csv extension contains the ID of the device which published the message,the load selected, date and time of the moment a load is selected. The name of the new CSV file created contains only load,date and time(format containing 'H' 'M' and 'S' specified in one of the above points. Here data and time are included to differentiate between experiments conducted on the same day.
+
+* The voltage values received are added to this file along with the time elapsed. At the end of the experiment "FUlly Discharged" message is recieved once and is added to the file informing the plotter that the experiment is finished and the mAh value can be calculated.
+* In the script Plot_value.py **FuncAnimate** function is used to create an interactive mode i.e to plot a real time graph. The mAh value of the battery is shown only when the message "Fully Discharged" intercepts by the interpreter.
 
 ## Result:
+  The result of the experments need not be the same everytime. The mAh value might change if the battery is not fully charged before the start of the experiment. The time taken for the discharge and the numbeer of voltage values recorded varies if a different load value is used or if the initial voltage of the battery is different.
 
 The device was tested for 3 different loads and the graph plotted were as follows:
 
-**Load**             |  093 Ohms             |  161 Ohms                                   
+**Load**             |  093 Ohms             |  161 Ohms(Not fully charged)                                   
 :-------------------------:|:-------------------------:|:-------------------------:
 **Graph**| <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_093.png" height="350"> | <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_116.png" height="350">
+
 <p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_232.JPG" height="400" width="650"></p>
 <p align="center">232 Ohms</p>
