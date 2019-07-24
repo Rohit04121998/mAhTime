@@ -94,6 +94,9 @@ PCB Front             |  PCB Back
 * To get the date and time info from the ESP8266, *NTTP Client* has been used . The *getFormattedDate()* function gives the date and time format as 2018-05-28T16:00:13Z. So modifications were done and the final output was  2018-05-28_10:00:13. This was further modified in the *plot.py* by replacing ':' with 'H', 'M' and 'S'. This was then appended to the *.csv* file having the load value as its initial name.
 
 ## Result:
+
+The device was tested for 3 different loads amd the graph plotted were as follows:
+
 **Load**             |  093 Ohms             |  161 Ohms             
 :-------------------------:|:-------------------------:|:-------------------------:
 **Graph**| <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_093.png" height="350"> | <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_116.png" height="350">
