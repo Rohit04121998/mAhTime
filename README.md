@@ -97,6 +97,6 @@ PCB Front             |  PCB Back
 
 The device was tested for 3 different loads and the graph plotted were as follows:
 
-**Load**             |  093 Ohms             |  161 Ohms              |  232 Ohms                        
-:-------------------------:|:-------------------------:|:-------------------------:
+**Load**             |  093 Ohms             |  161 Ohms              |  232 Ohms                       
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 **Graph**| <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_093.png" height="350"> | <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_116.png" height="350"> | <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_232.JPG" height="400" width="650"></p>
