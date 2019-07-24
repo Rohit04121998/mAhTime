@@ -77,7 +77,7 @@ Arduino IDE is used to program the microcontroller. The required header files an
 
 ### <p align="center">Fig 1. Unsoldered PCB</p>
 
-PCB Front             |  PCB Back
+PCB Front             |  PCB Back              
 :-------------------------:|:-------------------------:
 <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered.jpg" height="175" width="350"> |  <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/pcb_soldered_2.jpg" height="175" width="350"> 
 
@@ -95,9 +95,9 @@ PCB Front             |  PCB Back
 
 ## Result:
 
-The device was tested for 3 different loads amd the graph plotted were as follows:
+The device was tested for 3 different loads and the graph plotted were as follows:
 
-**Load**             |  093 Ohms             |  161 Ohms             
+**Load**             |  093 Ohms             |  161 Ohms               |  232 Ohms             
 :-------------------------:|:-------------------------:|:-------------------------:
 **Graph**| <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_093.png" height="350"> | <img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_116.png" height="350">
 <p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/Graph_232.JPG" height="400" width="650"></p>
