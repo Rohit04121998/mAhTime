@@ -112,4 +112,5 @@ The device was tested for 3 different loads and the graph plotted were as follow
 **Graph**| <img src="https://github.com/Rohit04121998/mAhTime/blob/master/CSV%20files%20and%20graphs/Graph_093.png" height="350"> | <img src="https://github.com/Rohit04121998/mAhTime/blob/master/CSV%20files%20and%20graphs/Graph_116.png" height="350">
 
 <p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/CSV%20files%20and%20graphs/Graph_232.JPG" height="400" width="650"></p>
+
 ### <p align="center">232 Ohms</p>
