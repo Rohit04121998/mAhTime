@@ -5,9 +5,9 @@ To calculate the battery life for a device using small batteries and intern use 
 
 ## Why do we need this?
 
-The capacity of a battery is measured in Ah (ampere-hours, for large batteries) or mAh (milliampere-hours, for small batteries). This is usually mentioned on the battery or in the datasheets provided by the manufacturer. But the capacity changes depending on the age of the battery, operating conditions, slightly different chemical composition, etc. So it affects the final result if use the capacity value provided by the manufacturer. learn more.
+The capacity of a battery is measured in Ah (ampere-hours, for large batteries) or mAh (milliampere-hours, for small batteries). This is usually mentioned on the battery or in the datasheets provided by the manufacturer. But the capacity changes depending on the age of the battery, operating conditions, slightly different chemical composition, etc. So it affects the final result.
 
-To get the actual capacity (close-enough-value), measuring the same is the method. Different methods using which one can measure the capacity, for example, Coulomb counting, Voltage monitoring, etc. (Learn more here or here).
+To get the actual capacity (close-enough-value), measuring the same is the method. Different methods are there using which one can measure the capacity, for example, Coulomb counting, Voltage monitoring, etc. (Learn more here or here).
 
 Here we use the second method; monitoring the terminal voltage when a known load (resistive) is connected.
 
