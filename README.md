@@ -2,7 +2,7 @@
 
 ## Objective 
 
-To calculate the battery life for a device using small batteries and intern use the data to calculate for any bigger battery.
+To calculate the battery life for a device using small batteries and inturn use the data to calculate for any bigger battery.
 
 ## Why do we need this?
 
