@@ -85,7 +85,7 @@ PCB Front             |  PCB Back
 
 <p align="center"><img src="https://github.com/Rohit04121998/mAhTime/blob/master/gallery/ESP_Display.JPG" height="275" width="500"></p>
 
-### <p align="center">Fig 3. ESP Display</p>
+### <p align="center">Fig 3. Display</p>
 
 ## Code:
 
